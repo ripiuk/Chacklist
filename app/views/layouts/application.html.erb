@@ -21,7 +21,7 @@
 				<% else %>
 					<li><%= link_to "Вхід", new_user_session_path %></li>
 				<% end %>
-				<li><%= link_to 'Інформація'  %></li>
+				<li><%= link_to 'Інформація', information_info_path %></li>
 			</ul>
 			<% if user_signed_in? %>
 				<%= link_to "Додати пункт", new_item_path, class: "navbar-text navbar-link navbar-right"%>
