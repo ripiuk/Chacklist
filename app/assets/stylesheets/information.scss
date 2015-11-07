@@ -1,3 +1,13 @@
 // Place all the styles related to the information controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.form {
+   animation: form-fly-up 0.80s ease;
+}
+
+@keyframes form-fly-up {
+   0% { transform: translateY(200px); }
+   50% { transform: translateY(-10px); }
+   100% { transform: translateY(0); }
+}
