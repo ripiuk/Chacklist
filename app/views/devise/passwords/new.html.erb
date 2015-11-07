@@ -1,0 +1,17 @@
+<div class="col-md-6 col-md-offset-3 background-sheet">
+	<h2 class="center-this">Забули ваш пароль?</h2>
+
+	<%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+	  <%= f.error_notification %>
+
+	  <div class="form-inputs">
+	    <%= f.input :email, required: true, autofocus: true %>
+	  </div>
+
+	  <div class="form-actions center-this">
+	    <%= f.button :submit, "Надіслати мені інструкції", class: "btn btn-success" %>
+	  </div>
+	<% end %>
+
+	<%= render "devise/shared/links" %>
+</div>
